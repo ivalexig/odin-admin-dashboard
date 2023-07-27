@@ -3,6 +3,7 @@
   border-width: 0;
   border-style: solid;
   border-color: #e5e7eb;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -39,8 +40,14 @@ body {
   flex: 1 1 0%;
 }
 
-.search-bar > img {
+.header svg {
   width: 1.5rem;
+  fill: #9ca3af;
+}
+
+.notifications > svg:hover {
+  cursor: pointer;
+  fill: black;
 }
 
 .search-bar > input {
@@ -49,4 +56,33 @@ body {
   height: 100%;
   display: block;
   outline: none;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.divider {
+  width: 1px;
+  height: 1.5rem;
+  background-color: #e5e7eb;
+}
+
+.profile {
+  display: flex;
+  column-gap: 0.875rem;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.profile-name {
+  font-weight: 500;
+  font-size: 0.875rem;
 }
