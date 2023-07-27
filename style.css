@@ -1,3 +1,25 @@
+* {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
 body {
-  background-color: cornflowerblue;
+  margin: 0px;
+  padding: 0px;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 18rem;
+  border-right-width: 1px;
+}
+
+.content {
+  flex: 1 0 auto;
 }
