@@ -18,28 +18,28 @@ body {
     "side main";
 }
 
+/* Sidebar styling */
+
 .sidebar {
   border-right-width: 1px;
   grid-area: side;
+  background-color: #111826;
 }
 
-.content {
-  grid-area: main;
-  flex: 1 0 auto;
-  padding: 0 2rem;
-}
+/* Header styling */
 
 .header {
   grid-area: header;
-  margin: 0 2rem;
   display: flex;
   flex: 1 1 0%;
   column-gap: 1.5rem;
   position: sticky;
   border-bottom-width: 1px;
+  padding: 0 2rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
 
-/* .search-bar {
+.search-bar {
   display: flex;
   flex: 1 1 0%;
 }
@@ -89,4 +89,12 @@ body {
 .profile-name {
   font-weight: 500;
   font-size: 0.875rem;
-} */
+}
+
+/* Main container styling */
+
+.content {
+  grid-area: main;
+  flex: 1 0 auto;
+  padding: 2.5rem 2rem;
+}
