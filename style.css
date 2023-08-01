@@ -100,19 +100,19 @@ body {
 
 .content-header {
   height: 7rem;
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: 0 2rem;
- z-index: 0;
- position: relative;
- box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 0;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .user-details {
   display: flex;
   align-items: center;
-  
 }
 
 .user-details > div {
@@ -146,12 +146,11 @@ body {
 }
 
 .content-main {
-  background-color: #F3F4F6;
+  background-color: #f3f4f6;
   display: grid;
   grid-template-columns: 1fr 18rem;
   grid-template-rows: 1fr;
-  grid-template-areas:
-    "projects other";
+  grid-template-areas: "projects other";
   height: calc(100% - 7rem);
   padding: 2.5rem 2rem;
 }
@@ -161,12 +160,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2rem 1fr 1fr 1fr;
-  grid-template-areas: 
+  grid-template-areas:
     "title title"
     "c1 c2"
     "c3 c4"
-    "c5 c6"
-  ;
+    "c5 c6";
   grid-gap: 1.5rem;
 }
 
