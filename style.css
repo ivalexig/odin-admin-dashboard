@@ -204,7 +204,7 @@ body {
 .content-main {
   background-color: #f3f4f6;
   display: grid;
-  grid-template-columns: 1fr 30%;
+  grid-template-columns: 1fr 20rem;
   grid-template-rows: 1fr;
   grid-template-areas: "projects other";
   height: calc(100% - 5rem);
