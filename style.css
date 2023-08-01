@@ -338,7 +338,7 @@ body {
   opacity: 0.8;
 }
 
-.divider {
+.h-divider {
   background-color: #334155;
   opacity: 0.7;
   width: 100%;
@@ -353,5 +353,37 @@ body {
 
 a {
   color: #111826;
+  opacity: 0.7;
+}
+
+.trending {
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  color: #111826;
+  font-size: 0.85rem;
+}
+
+.trending-item {
+  display: flex;
+  align-items: center;
+}
+
+.trending-user-avatar {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.username {
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.appname {
   opacity: 0.7;
 }
