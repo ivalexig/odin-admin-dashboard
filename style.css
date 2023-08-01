@@ -148,7 +148,7 @@ body {
 .content-main {
   background-color: #f3f4f6;
   display: grid;
-  grid-template-columns: 1fr 25rem;
+  grid-template-columns: 1fr 30%;
   grid-template-rows: 1fr;
   grid-template-areas: "projects other";
   height: calc(100% - 5rem);
@@ -165,7 +165,7 @@ body {
     "c1 c2"
     "c3 c4"
     "c5 c6";
-  grid-gap: 1.5rem;
+  grid-gap: 1.5rem 1.75rem;
 }
 
 .section-title {
@@ -176,27 +176,27 @@ body {
   margin: 0;
 }
 
-.projects > div:nth-child(1) {
+.projects > div:nth-child(2) {
   grid-area: c1;
 }
 
-.projects > div:nth-child(2) {
+.projects > div:nth-child(3) {
   grid-area: c2;
 }
 
-.projects > div:nth-child(3) {
+.projects > div:nth-child(4) {
   grid-area: c3;
 }
 
-.projects > div:nth-child(4) {
+.projects > div:nth-child(5) {
   grid-area: c4;
 }
 
-.projects > div:nth-child(5) {
+.projects > div:nth-child(6) {
   grid-area: c5;
 }
 
-.projects > div:nth-child(6) {
+.projects > div:nth-child(7) {
   grid-area: c6;
 }
 
@@ -205,6 +205,10 @@ body {
   border-radius: 1rem;
   display: grid;
   grid-template: 1fr 3rem / 0.5rem 1fr;
+}
+
+.card:hover {
+  transform: scale(1.01);
 }
 
 .card-border {
@@ -235,6 +239,11 @@ body {
   justify-content: flex-end;
   gap: 0.85rem;
   padding: 0 1.25rem 1rem 0;
+}
+
+.card-actions > svg:hover {
+  cursor: pointer;
+  fill: #fde047;
 }
 
 .other-content {
