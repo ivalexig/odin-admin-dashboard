@@ -24,6 +24,62 @@ body {
   border-right-width: 1px;
   grid-area: side;
   background-color: #111826;
+  display: grid;
+  grid-template: 4rem 1fr 3rem / 1fr;
+  padding: 0 1.5rem 1rem;
+}
+
+.logo {
+  height: 2rem;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.logo img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.menu {
+  margin-top: 2rem;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #9ca3af;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  height: 3rem;
+}
+
+.menu-item:hover {
+  background-color: #1f2937;
+  color: white;
+}
+
+.menu-item:hover svg {
+  fill: white;
+}
+
+#active {
+  background-color: #1f2937;
+  color: white;
+}
+#active svg {
+  fill: white;
+}
+
+.sidebar svg {
+  width: 1.5rem;
+  fill: #9ca3af;
+  margin-right: 1rem;
 }
 
 /* Header styling */
@@ -204,7 +260,7 @@ body {
   background-color: white;
   border-radius: 1rem;
   display: grid;
-  grid-template: 1fr 3rem / 0.5rem 1fr;
+  grid-template: 1fr 2.75rem / 0.5rem 1fr;
 }
 
 .card:hover {
@@ -239,6 +295,10 @@ body {
   justify-content: flex-end;
   gap: 0.85rem;
   padding: 0 1.25rem 1rem 0;
+}
+
+.card-actions > svg {
+  fill: #111826;
 }
 
 .card-actions > svg:hover {
