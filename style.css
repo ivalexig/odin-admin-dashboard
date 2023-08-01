@@ -148,6 +148,65 @@ body {
 .content-main {
   background-color: #F3F4F6;
   display: grid;
+  grid-template-columns: 1fr 18rem;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "projects other";
   height: calc(100% - 7rem);
   padding: 2.5rem 2rem;
+}
+
+.projects {
+  grid-area: projects;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2rem 1fr 1fr 1fr;
+  grid-template-areas: 
+    "title title"
+    "c1 c2"
+    "c3 c4"
+    "c5 c6"
+  ;
+  grid-gap: 1.5rem;
+}
+
+.section-title {
+  grid-area: title;
+  align-self: end;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.projects div:nth-child(1) {
+  grid-area: c1;
+}
+
+.projects div:nth-child(2) {
+  grid-area: c2;
+}
+
+.projects div:nth-child(3) {
+  grid-area: c3;
+}
+
+.projects div:nth-child(4) {
+  grid-area: c4;
+}
+
+.projects div:nth-child(5) {
+  grid-area: c5;
+}
+
+.projects div:nth-child(6) {
+  grid-area: c6;
+}
+
+.card {
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.other-content {
+  grid-area: other;
 }
