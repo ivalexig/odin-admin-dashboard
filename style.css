@@ -96,5 +96,58 @@ body {
 .content {
   grid-area: main;
   flex: 1 0 auto;
+}
+
+.content-header {
+  height: 7rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 2rem;
+ z-index: 0;
+ position: relative;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  
+}
+
+.user-details > div {
+  flex: 1 1 0%;
+  font-weight: 500;
+  margin-left: 12px;
+}
+
+.small-text {
+  font-size: 0.875rem;
+}
+
+.big-text {
+  font-size: 1.5rem;
+}
+
+.btn {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  font-style: bold;
+  border-radius: 0.4rem;
+  margin-left: 0.75rem;
+  min-width: 5rem;
+  color: #e5e7eb;
+  background-color: #111826;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #334155;
+}
+
+.content-main {
+  background-color: #F3F4F6;
+  display: grid;
+  height: calc(100% - 7rem);
   padding: 2.5rem 2rem;
 }
